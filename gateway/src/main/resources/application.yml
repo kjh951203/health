@@ -1,0 +1,74 @@
+server:
+  port: 8088
+
+---
+
+spring:
+  profiles: default
+  cloud:
+    gateway:
+      routes:
+        - id: call
+          uri: http://localhost:8081
+          predicates:
+            - Path=/calls/** 
+        - id: help
+          uri: http://localhost:8082
+          predicates:
+            - Path=/helps/** /callReqLists/**
+        - id: payment
+          uri: http://localhost:8083
+          predicates:
+            - Path=/payments/** 
+        - id: mypage
+          uri: http://localhost:8084
+          predicates:
+            - Path=/myPages/** /myPages/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+
+---
+
+spring:
+  profiles: docker
+  cloud:
+    gateway:
+      routes:
+        - id: call
+          uri: http://call:8080
+          predicates:
+            - Path=/calls/** 
+        - id: help
+          uri: http://help:8080
+          predicates:
+            - Path=/helps/** /callReqLists/**
+        - id: payment
+          uri: http://payment:8080
+          predicates:
+            - Path=/payments/** 
+        - id: mypage
+          uri: http://mypage:8080
+          predicates:
+            - Path=/myPages/** /myPages/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+server:
+  port: 8080
