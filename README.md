@@ -49,8 +49,6 @@ my page에서 stauts가 변경될 때마다, event를 수신하여 command와 vi
 ![image](https://user-images.githubusercontent.com/45971330/123208979-ef802f80-d4fa-11eb-9406-2f4edf34d79c.png)
 
 
-![image](https://user-images.githubusercontent.com/45971330/123209207-3ff78d00-d4fb-11eb-85a7-1bc380b88e95.png)
-
 
 6. CheckPoint6. Polyglot
 
