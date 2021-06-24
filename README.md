@@ -139,6 +139,7 @@ siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080
 ```
 ![image](https://user-images.githubusercontent.com/45971330/123224212-928d7500-d50c-11eb-886e-3ab2f1bb9606.png)
 
+![image](https://user-images.githubusercontent.com/45971330/123232251-ecde0400-d513-11eb-8a05-30e973e5c339.png)
 
 9. CheckPoint9. Autoscale (HPA)
 
@@ -152,6 +153,8 @@ kubectl autoscale deployment payment --cpu-percent=15 --min=1 --max=3
 ```
 siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080/calls POST {"price":"15000", "name":"kim", "part":"benchpress"}'
 ```
+10. CheckPoint10. Zero-downtime deploy (Readiness Probe)
+
 
 ![image](https://user-images.githubusercontent.com/45971330/123229730-88ba4080-d511-11eb-95b2-52605a31776d.png)
 
