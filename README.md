@@ -153,10 +153,17 @@ kubectl autoscale deployment payment --cpu-percent=15 --min=1 --max=3
 ```
 siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080/calls POST {"price":"15000", "name":"kim", "part":"benchpress"}'
 ```
-10. CheckPoint10. Zero-downtime deploy (Readiness Probe)
-
 
 ![image](https://user-images.githubusercontent.com/45971330/123229730-88ba4080-d511-11eb-95b2-52605a31776d.png)
+
+
+10. CheckPoint10. Zero-downtime deploy (Readiness Probe)
+
+![image](https://user-images.githubusercontent.com/45971330/123233161-ca98b600-d514-11eb-913f-f1f19c7a4645.png)
+
+
+![image](https://user-images.githubusercontent.com/45971330/123233101-be145d80-d514-11eb-9a74-4658f2fc7477.png)
+
 
 11. CheckPoint11. Config Map/ Persistence Volume
 
@@ -164,6 +171,9 @@ siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080
 
 
 ![image](https://user-images.githubusercontent.com/45971330/123230993-bfdd2180-d512-11eb-8dfd-9b7cd70eb9f8.png)
+
+![image](https://user-images.githubusercontent.com/45971330/123234467-eea8c700-d515-11eb-8228-8e4a630408f6.png)
+
 
 ```
 $ kubectl create configmap apiurl --from-literal=url=http://payment:8080 --from-literal=fluentd-server-ip=10.xxx.xxx.xxx -n default
