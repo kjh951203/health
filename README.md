@@ -17,3 +17,13 @@ sub
 
 ![image](https://user-images.githubusercontent.com/45971330/123206048-ed67a200-d4f5-11eb-8f42-65d95d1b030c.png)
 
+
+5. CheckPoint5. Gateway
+
+![image](https://user-images.githubusercontent.com/45971330/123208903-d2e3f780-d4fa-11eb-9798-15b9409289aa.png)
+
+
+![image](https://user-images.githubusercontent.com/45971330/123208979-ef802f80-d4fa-11eb-9406-2f4edf34d79c.png)
+
+
+![image](https://user-images.githubusercontent.com/45971330/123209207-3ff78d00-d4fb-11eb-85a7-1bc380b88e95.png)
