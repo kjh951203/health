@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
-namespace: default
 metadata:
   name: call
+  namespace: default
   labels:
     app: call
 spec:
