@@ -129,4 +129,5 @@ spec:
               cpu: 200m
 ```
 
+![image](https://user-images.githubusercontent.com/45971330/123217227-4e4aa680-d505-11eb-996d-ef2c3792c511.png)
 
