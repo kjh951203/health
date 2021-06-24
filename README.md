@@ -27,3 +27,10 @@ sub
 
 
 ![image](https://user-images.githubusercontent.com/45971330/123209207-3ff78d00-d4fb-11eb-85a7-1bc380b88e95.png)
+
+
+6. CheckPoint6. Polyglot
+
+call의 porm.xml h2 > hsql로변경
+
+![image](https://user-images.githubusercontent.com/45971330/123209777-168b3100-d4fc-11eb-98bf-6b1960d2ee92.png)
