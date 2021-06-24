@@ -56,3 +56,21 @@ my page에서 stauts가 변경될 때마다, event를 수신하여 command와 vi
 call의 porm.xml h2 > hsql로변경
 
 ![image](https://user-images.githubusercontent.com/45971330/123209777-168b3100-d4fc-11eb-98bf-6b1960d2ee92.png)
+
+
+
+7. CheckPoint7. Deploy/ Pipeline
+
+```
+git clone https://github.com/kjh951203/health.git
+
+mvn package -Dmaven.test.skip=true
+
+az acr build --image junghwan.azurecr.io/help:v1 \
+  --registry junghwan \
+  --file Dockerfile . 
+  
+az acr build --image junghwan.azurecr.io/help:latest \
+  --registry junghwan \
+  --file Dockerfile . 
+```
