@@ -18,7 +18,10 @@ sub
 ![image](https://user-images.githubusercontent.com/45971330/123206048-ed67a200-d4f5-11eb-8f42-65d95d1b030c.png)
 
 2. CheckPoint2. CQRS
-help service
+
+my page에서 stauts가 변경될 때마다, event를 수신하여 command와 view를 분리시킴 
+
+![image](https://user-images.githubusercontent.com/45971330/123215521-84872680-d503-11eb-8204-d1d904d470d1.png)
 
 
 3. CheckPoint3. Correlation
