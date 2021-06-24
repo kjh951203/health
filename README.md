@@ -155,3 +155,16 @@ siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080
 
 ![image](https://user-images.githubusercontent.com/45971330/123229730-88ba4080-d511-11eb-95b2-52605a31776d.png)
 
+11. CheckPoint11. Config Map/ Persistence Volume
+
+![image](https://user-images.githubusercontent.com/45971330/123230720-7d1b4980-d512-11eb-8380-9331a6a173ce.png)
+
+
+![image](https://user-images.githubusercontent.com/45971330/123230993-bfdd2180-d512-11eb-8dfd-9b7cd70eb9f8.png)
+
+```
+$ kubectl create configmap apiurl --from-literal=url=http://payment:8080 --from-literal=fluentd-server-ip=10.xxx.xxx.xxx -n default
+```
+![image](https://user-images.githubusercontent.com/45971330/123231252-02066300-d513-11eb-8440-a91b487044fe.png)
+
+
