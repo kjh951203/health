@@ -185,3 +185,14 @@ $ kubectl create configmap apiurl --from-literal=url=http://payment:8080 --from-
 ```
 
 ![image](https://user-images.githubusercontent.com/45971330/123231252-02066300-d513-11eb-8440-a91b487044fe.png)
+
+
+12. CheckPoint12. Self-healing (Liveness Probe)
+
+![image](https://user-images.githubusercontent.com/45971330/123237726-e0a87580-d518-11eb-829e-57261393453e.png)
+
+![image](https://user-images.githubusercontent.com/45971330/123237828-f61d9f80-d518-11eb-90be-f1bdba9dc14c.png)
+
+```
+kubectl apply -f call/kubernetes/deployment.yml
+```
