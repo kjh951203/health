@@ -164,6 +164,10 @@ siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080
 
 ![image](https://user-images.githubusercontent.com/45971330/123233101-be145d80-d514-11eb-9a74-4658f2fc7477.png)
 
+```
+kubectl set image deployment call call=junghwan.azurecr.io/call:v1
+```
+
 ![image](https://user-images.githubusercontent.com/45971330/123234467-eea8c700-d515-11eb-8228-8e4a630408f6.png)
 
 
