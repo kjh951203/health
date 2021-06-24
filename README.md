@@ -197,4 +197,4 @@ $ kubectl create configmap apiurl --from-literal=url=http://payment:8080 --from-
 ```
 kubectl apply -f call/kubernetes/deployment.yml
 ```
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/45971330/123239059-f8342e00-d519-11eb-8c23-737656656a2e.png)
