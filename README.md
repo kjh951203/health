@@ -131,3 +131,24 @@ spec:
 
 ![image](https://user-images.githubusercontent.com/45971330/123217227-4e4aa680-d505-11eb-996d-ef2c3792c511.png)
 
+
+8. CheckPoint8. Circuit Breaker
+
+```
+siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080/calls POST {"price":"15000", "name":"kim", "part":"benchpress"}'
+```
+![image](https://user-images.githubusercontent.com/45971330/123224212-928d7500-d50c-11eb-886e-3ab2f1bb9606.png)
+
+
+9. CheckPoint9. Autoscale (HPA)
+
+```
+kubectl autoscale deployment call --cpu-percent=15 --min=1 --max=3
+kubectl autoscale deployment payment --cpu-percent=15 --min=1 --max=3
+```
+
+![image](https://user-images.githubusercontent.com/45971330/123225388-a4bbe300-d50d-11eb-99e5-97da15b52f5e.png)
+
+```
+siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080/calls POST {"price":"15000", "name":"kim", "part":"benchpress"}'
+```
