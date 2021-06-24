@@ -19,6 +19,16 @@ public class Payment {
 
     @PostPersist
     public void onPostPersist(){
+        if(price.equals("777"))
+        {
+           try{
+                Thread.sleep(7000);
+            }
+            catch(Exception e){
+                e.printStackTrace();
+                System.out.println();
+            }
+        }
         PaymentApproved paymentApproved = new PaymentApproved();
         BeanUtils.copyProperties(this, paymentApproved);
         paymentApproved.publishAfterCommit();

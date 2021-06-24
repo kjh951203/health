@@ -15,7 +15,7 @@ spring:
         - id: help
           uri: http://localhost:8082
           predicates:
-            - Path=/helps/** /callReqLists/**
+            - Path=/helps/**,/callReqLists/**
         - id: payment
           uri: http://localhost:8083
           predicates:
@@ -23,7 +23,7 @@ spring:
         - id: mypage
           uri: http://localhost:8084
           predicates:
-            - Path=/myPages/** /myPages/**
+            - Path=/myPages/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -50,7 +50,7 @@ spring:
         - id: help
           uri: http://help:8080
           predicates:
-            - Path=/helps/** /callReqLists/**
+            - Path=/helps/**,/callReqLists/**
         - id: payment
           uri: http://payment:8080
           predicates:
@@ -58,7 +58,7 @@ spring:
         - id: mypage
           uri: http://mypage:8080
           predicates:
-            - Path=/myPages/** /myPages/**
+            - Path=/myPages/**
       globalcors:
         corsConfigurations:
           '[/**]':
