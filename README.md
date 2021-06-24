@@ -74,3 +74,59 @@ az acr build --image junghwan.azurecr.io/help:latest \
   --registry junghwan \
   --file Dockerfile . 
 ```
+
+kubectl apply -f call/kubernetes/deployment.yml
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: call
+  namespace: default
+  labels:
+    app: call
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: call
+  template:
+    metadata:
+      labels:
+        app: call
+    spec:
+      containers:
+        - name: call
+          image: junghwan.azurecr.io/call:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: configurl
+              valueFrom:
+                configMapKeyRef:
+                  name: apiurl
+                  key: url
+          readinessProbe:
+            httpGet:
+              path: '/actuator/health'
+              port: 8080
+            initialDelaySeconds: 10
+            timeoutSeconds: 2
+            periodSeconds: 5
+            failureThreshold: 10
+          livenessProbe:
+            httpGet:
+              path: '/actuator/health'
+              port: 8080
+            initialDelaySeconds: 120
+            timeoutSeconds: 2
+            periodSeconds: 5
+            failureThreshold: 5
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 200m
+```
+
+
