@@ -17,8 +17,14 @@ sub
 
 ![image](https://user-images.githubusercontent.com/45971330/123206048-ed67a200-d4f5-11eb-8f42-65d95d1b030c.png)
 
+4. CheckPoint4. Req/Resp
+
+
+![image](https://user-images.githubusercontent.com/45971330/123213509-09bd0c00-d501-11eb-8948-0c37ce99aa5f.png)
+
 
 5. CheckPoint5. Gateway
+
 
 ![image](https://user-images.githubusercontent.com/45971330/123208903-d2e3f780-d4fa-11eb-9798-15b9409289aa.png)
 
