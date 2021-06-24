@@ -17,7 +17,20 @@ sub
 
 ![image](https://user-images.githubusercontent.com/45971330/123206048-ed67a200-d4f5-11eb-8f42-65d95d1b030c.png)
 
-4. CheckPoint4. Req/Resp
+2. CheckPoint2. CQRS
+help service
+
+
+3. CheckPoint3. Correlation
+
+![image](https://user-images.githubusercontent.com/45971330/123214139-cd3de000-d501-11eb-9648-867699c35a92.png)
+
+![image](https://user-images.githubusercontent.com/45971330/123214943-cc597e00-d502-11eb-8086-ad5052ac9901.png)
+
+![image](https://user-images.githubusercontent.com/45971330/123215043-e6935c00-d502-11eb-9640-7906b307bead.png)
+
+
+5. CheckPoint4. Req/Resp
 
 
 ![image](https://user-images.githubusercontent.com/45971330/123213509-09bd0c00-d501-11eb-8948-0c37ce99aa5f.png)
