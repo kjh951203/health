@@ -152,3 +152,6 @@ kubectl autoscale deployment payment --cpu-percent=15 --min=1 --max=3
 ```
 siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080/calls POST {"price":"15000", "name":"kim", "part":"benchpress"}'
 ```
+
+![image](https://user-images.githubusercontent.com/45971330/123229730-88ba4080-d511-11eb-95b2-52605a31776d.png)
+
