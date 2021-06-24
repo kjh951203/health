@@ -139,7 +139,6 @@ siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080
 ```
 ![image](https://user-images.githubusercontent.com/45971330/123224212-928d7500-d50c-11eb-886e-3ab2f1bb9606.png)
 
-![image](https://user-images.githubusercontent.com/45971330/123232251-ecde0400-d513-11eb-8a05-30e973e5c339.png)
 
 9. CheckPoint9. Autoscale (HPA)
 
@@ -165,6 +164,7 @@ siege -c100 -t60S -r10 -v --content-type "application/json" 'http://gateway:8080
 ![image](https://user-images.githubusercontent.com/45971330/123233101-be145d80-d514-11eb-9a74-4658f2fc7477.png)
 
 ```
+siege -c1 -t180S -r100 --content-type "application/json" 'http://gateway:8080/calls POST {"price":"15000", "name":"kim", "part":"benchpress"}'
 kubectl set image deployment call call=junghwan.azurecr.io/call:v1
 ```
 
