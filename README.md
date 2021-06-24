@@ -32,6 +32,7 @@ my page에서 stauts가 변경될 때마다, event를 수신하여 command와 vi
 
 ![image](https://user-images.githubusercontent.com/45971330/123215043-e6935c00-d502-11eb-9640-7906b307bead.png)
 
+![image](https://user-images.githubusercontent.com/45971330/123238778-bacfa080-d519-11eb-8bf0-039d0d0d7541.png)
 
 5. CheckPoint4. Req/Resp
 
@@ -196,3 +197,4 @@ $ kubectl create configmap apiurl --from-literal=url=http://payment:8080 --from-
 ```
 kubectl apply -f call/kubernetes/deployment.yml
 ```
+![Uploading image.png…]()
