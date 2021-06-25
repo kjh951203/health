@@ -19,9 +19,11 @@ public class PolicyHandler{
 
         System.out.println("\n\n##### listener StatusUpdate : " + helpAssigned.toJson() + "\n\n");
 
-        // Sample Logic //
-        Call call = new Call();
-        callRepository.save(call);
+        callRepository.findById(helpAssigned.getId()).ifPresent(Call ->{
+            System.out.println("##### wheneverPickupAssigned_MatchRepository.findById : exist" );
+            Call.setStatus(helpAssigned.getEventType()); 
+            callRepository.save(Call);
+        });
             
     }
 
